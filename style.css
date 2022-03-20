@@ -1,0 +1,81 @@
+@font-face{
+    font-family:'raleway';
+    src:url('raleway.ttf');
+}
+html{
+    display:flex;
+    justify-content:center;
+}
+body{
+    box-sizing:border-box;
+    padding :0px;
+    margin:0px;
+    font-family:raleway;
+    width:992px;
+}
+.menu{
+    display:flex;
+    justify-content:space-between;
+}
+.logo{
+    width:191px;
+    height:90px;
+    padding-top:30px;
+}
+.secteurs{
+    display:flex;
+    justify-content:space-around;
+    width:250px;
+    font-weight:bolder;
+}
+.hebergements{
+    border-top:solid 3px #0065FC;
+    color:#0065FC;
+    padding-top:45px;
+}
+.activites{
+    border-top:solid 3px white;
+    padding-top:45px;
+}
+.barre_recherche{
+    display:flex;
+    font-size: 110%;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+.localisation{
+    border:1px #F2F2F2 solid;
+    background-color: #F2F2F2;
+    padding:15px;
+    border-radius:20px 0px 0px 20px;
+}
+.ville{
+    border:1px #F2F2F2 solid;
+    padding:15px 15px 15px 15px;
+    font-weight:800;
+    width:180px;
+}
+.rechercher{
+    color:white;
+    background-color:#0065FC;
+    padding:15px;
+    border-radius:0px 20px 20px 0px;
+    font-weight:800;
+}
+.filtres{
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:900;
+    padding-left:20px;
+}
+.txt_filtres{
+    padding:5px;
+    font-weight: 900;
+}
+.element_filtres{
+    border:3px #F2F2F2 solid;
+    padding:15px;
+    border-radius:30px 30px 30px 30px;
+}
