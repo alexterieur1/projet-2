@@ -12,7 +12,7 @@ header{
     width:1400px;
 }
 
-.menu{
+.header{
     display:flex;
     justify-content:space-between;
 }
@@ -76,7 +76,7 @@ a:link{
     padding:15px 15px 15px 15px;
     font-weight:800;
     margin:0px;
-    height:16px;
+    /*height:16px;*/
 }
 
 .formulaire{
@@ -91,7 +91,7 @@ a:link{
     border-radius:0px 20px 20px 0px;
     font-weight:700;
     border:none;
-    height:48px;
+    /*height:48px;*/
     font-size:90%;
     margin-left:0px;
 }
@@ -116,7 +116,7 @@ a:link{
     padding-right:5px;
 }
 
-.fa-solid.fa-lg{
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     box-sizing:content-box;
     display:flex;
     align-items:center;
@@ -135,10 +135,6 @@ main{
     justify-content:space-between;
 }
 
-.contenu_footer{
-    min-width:1400px;
-    display:flex;
-}
 .resultat{
     background-color:#F2F2F2;
     border-radius:15px;
@@ -326,6 +322,11 @@ footer{
     justify-content:center;
 }
 
+.contenu_footer{
+    min-width:1400px;
+    display:flex;
+}
+
 .titre_footer{
     font-weight:700;
 }
@@ -338,13 +339,121 @@ footer{
     padding-top:15px;
 }
 
-@media (min-width:768px) and (max-width:992px){
+@media all and (min-width:768px) and (max-width:992px){
     
+    .filtres{
+        gap:20px;
+    }
+
     header{
-        background-color:red;
+        max-width:972px;
+        min-width: 768px;
+        padding-left:20px
     }
 
     .resultat_activite{
-        padding-inline:20px;
+        margin-inline:20px;
+    }
+
+    .resultat{
+        min-width:912px;
+        border-radius: 0px;
+    }
+
+    .contenu_footer{
+        min-width:980px;
+    }
+    .liste_footer{
+        padding-right:0px;
+    }
+
+    .contenu_footer{
+        justify-content:space-around;
+    }
+    .grille_populaire{
+        flex-direction: row;
+    }
+
+    .populaire{
+        margin-top:50px;
+        max-height: 221px;
+    }
+
+    .imageg{
+        width:calc(100% - 150px);
+    }
+    .Populaire{
+        height:150px;
+    }
+
+    .Hebergement{
+        height:200px;
+    }
+}
+
+@media all and (max-width:767px){
+
+    body{
+        font-size:x-large;
+    }
+
+    header{
+        padding:0px;
+        background-color: red;
+        max-width:767px;
+    }
+
+    .header{
+        display:block;
+        padding:0px;
+    }
+/*
+    .logo{
+
+    }
+*/
+    .button{
+        width:50%;
+    }
+
+    .hebergements, .activites{
+        padding:0px 0px 25px 0px;
+        border-top:none;
+        border-bottom:solid 3px #0065FC;
+        display:flex;
+        justify-content:center;
+    }
+
+    .barre_recherche{
+        height: 80px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .menu{
+        padding:20px;
+    }
+
+    .localisation, .rechercher{
+        width:100px;
+    }
+    
+    .element_filtres{
+        padding-right:20px;
+        border-radius: 80px;
+    }
+
+    .filtres{
+        flex-wrap:wrap;
+    }
+
+    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+        width:80px;
+        height:80px;
+        border-radius:100px;
+    }
+
+    .txt_filtres{
+        padding-inline:10px;
     }
 }
