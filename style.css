@@ -8,8 +8,13 @@ body{
     margin:0 auto;
 }
 
+p{
+    margin:0px;
+}
+
 header{
-    width:1400px;
+    width:100%;
+    max-width:1400px;
 }
 
 .header{
@@ -91,7 +96,6 @@ a:link{
     border-radius:0px 20px 20px 0px;
     font-weight:700;
     border:none;
-    /*height:48px;*/
     font-size:90%;
     margin-left:0px;
 }
@@ -99,13 +103,14 @@ a:link{
 .filtres{
     display:flex;
     align-items:center;
-    font-weight:900;
+    font-weight:800;
     padding-left:20px;
-    gap:60px;
+    gap:45px;
 }
 
 .txt_filtres{
-    padding:5px;
+    padding-block:13px;
+    padding-inline:10px;
 }
 
 .element_filtres{
@@ -122,10 +127,11 @@ a:link{
     align-items:center;
     justify-content:center;
     color:#0065FC;
-    border-radius:30px;
+    border-radius:50px;
     background-color:#DEEBFF;
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
+    margin:-3px;
 }
 
 main{
@@ -211,16 +217,19 @@ main{
 .descriptif{
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
+    height: 75px;
     padding:10px 0px 0px 10px;
 }
 
 .titre_descriptif{
-    font-size:12px;
-    font-weight:600;
+    font-size:15px;
+    font-weight:800;
 }
 
 .prix_descriptif{
-    font-size:10px;
+    font-size:15px;
+    font-weight:500;
 }
 
 .star-full{
@@ -269,10 +278,10 @@ main{
 }
 
 .descriptif_populaire{
-    height:90px;
+    height:120px;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     padding-left:10px;
     width:150px;
 }
@@ -323,8 +332,9 @@ footer{
 }
 
 .contenu_footer{
-    min-width:1400px;
+    max-width:1400px;
     display:flex;
+    width:100%;
 }
 
 .titre_footer{
@@ -332,9 +342,10 @@ footer{
 }
 
 .liste_footer{
-    padding-right:250px;
+    width:33%;
+    display:flex;
+    flex-direction:column;
 }
-
 .contenue_footer{
     padding-top:15px;
 }
@@ -342,13 +353,25 @@ footer{
 @media all and (min-width:768px) and (max-width:992px){
     
     .filtres{
-        gap:20px;
+    padding-left: 0px;
+    max-width: 992px;
+    min-width: 768px;
+    gap: 0px;
+    justify-content:space-around;
     }
 
     header{
         max-width:972px;
         min-width: 768px;
         padding-left:20px
+    }
+
+    .txt_filtres{
+        padding-inline:6px;
+    }
+
+    .element_filtres{
+        padding-right:0px;
     }
 
     .resultat_activite{
