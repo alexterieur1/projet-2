@@ -49,6 +49,13 @@ li{
     text-decoration:none;
 }
 
+.test{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    gap:20px;
+}
+
 .activites{
     border-top:solid 3px white;
     padding:50px 20px 0px 20px;
@@ -144,12 +151,12 @@ main{
 .resultat{
     background-color:#F2F2F2;
     border-radius:15px;
-    height:500px;
-    padding:40px;
+    /*height: 500px;*/
+    padding:20px;
 }
 
 .hebergement{
-    max-width: 850px;
+    max-width: 800px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -197,21 +204,22 @@ main{
 }
 
 .grille{
-    gap:40px;
+    gap:30px;
     display:flex;
 }
 .Hebergement{
     flex-direction:column;
     height:190px;
     flex:1;
-    min-height:0px;
+    min-width:27%;
 }
 
 .image{
     height:calc(100% - 60px);
     border-radius:17px 17px 0px 0px;
     object-fit:cover;
-    min-height:0px;
+    min-width:0px;
+    min-height:0px; 
 }
 
 .descriptif{
@@ -274,7 +282,7 @@ main{
     border-radius:17px 0px 0px 17px;
     object-fit: cover;
     width:calc(100% - 190px);
-    min-width:0px;
+    min-width:104px;
 }
 
 .descriptif_populaire{
@@ -287,7 +295,7 @@ main{
 }
 
 .grille_activite{
-    height:500px;
+    height:550px;
 }
 
 .colonne{
@@ -366,6 +374,12 @@ footer{
         padding-left:20px
     }
 
+    main{
+        max-width: 100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
     .txt_filtres{
         padding-inline:6px;
     }
@@ -386,6 +400,7 @@ footer{
     .contenu_footer{
         min-width:980px;
     }
+
     .liste_footer{
         padding-right:0px;
     }
@@ -393,24 +408,57 @@ footer{
     .contenu_footer{
         justify-content:space-around;
     }
+
     .grille_populaire{
         flex-direction: row;
     }
 
+    .grille{
+        gap:30px;
+        display:flex;
+        justify-content:space-between;
+    }
     .populaire{
         margin-top:50px;
-        max-height: 221px;
+        max-height: 250px;
+        order:1;
+    }
+
+    .descriptif_populaire{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height: 75px;
+        padding:10px 0px 0px 10px;
     }
 
     .imageg{
-        width:calc(100% - 150px);
+        height:calc(100% - 60px);
+        border-radius:17px 17px 0px 0px;
+        object-fit:cover;
+        width:auto;
+        min-height:0px; 
     }
+
+    .test{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+    .hebergement{
+        order:2;
+    }
+
     .Populaire{
         height:150px;
     }
 
-    .Hebergement{
+    .Hebergement, .Populaire{
         height:200px;
+        flex-direction:column;
+        flex:1;
+        min-width:27%;
     }
 }
 
