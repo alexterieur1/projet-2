@@ -3,7 +3,7 @@ body{
     align-items:center;
     flex-direction:column;
     box-sizing:border-box;
-    padding :0px;
+    padding:0px;
     font-family:'Raleway';
     margin:0 auto;
 }
@@ -12,9 +12,19 @@ p{
     margin:0px;
 }
 
+h1{
+    width:100%;
+}
+
+.titre_populaire{
+    display:flex;
+
+}
+
 header{
     width:100%;
     max-width:1400px;
+    padding-left:20px;
 }
 
 .header{
@@ -51,7 +61,7 @@ li{
 
 .test{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     width:100%;
     gap:20px;
 }
@@ -128,7 +138,7 @@ a:link{
     padding-right:5px;
 }
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog{
     box-sizing:content-box;
     display:flex;
     align-items:center;
@@ -141,7 +151,18 @@ a:link{
     margin:-3px;
 }
 
+.star-populaire{
+    height:20px;
+    line-height:1;
+    color:black;
+}
+
+.fa-magnifying-glass{
+    display:none;
+}
+
 main{
+    padding-inline:20px;
     max-width:1400px;
     display:flex;
     flex-wrap:wrap;
@@ -156,7 +177,7 @@ main{
 }
 
 .hebergement{
-    max-width: 800px;
+    max-width: 930px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -256,7 +277,6 @@ main{
 }
 
 .populaire{
-    max-width:420px;
     display:flex;
     flex-direction:column;
 }
@@ -276,6 +296,7 @@ main{
     flex-direction:column;
     max-height:calc(100% - 39px);
     padding-block:20px;
+    max-width:305px;
 }
 
 .imageg{
@@ -283,6 +304,7 @@ main{
     object-fit: cover;
     width:calc(100% - 190px);
     min-width:104px;
+    flex:3;
 }
 
 .descriptif_populaire{
@@ -292,6 +314,7 @@ main{
     justify-content:space-between;
     padding-left:10px;
     width:150px;
+    flex:5;
 }
 
 .grille_activite{
@@ -340,9 +363,9 @@ footer{
 }
 
 .contenu_footer{
-    max-width:1400px;
     display:flex;
     width:100%;
+    padding-left:20px;
 }
 
 .titre_footer{
@@ -350,36 +373,39 @@ footer{
 }
 
 .liste_footer{
-    width:33%;
-    display:flex;
-    flex-direction:column;
+    flex:1;
 }
+
 .contenue_footer{
     padding-top:15px;
 }
 
-@media all and (min-width:768px) and (max-width:992px){
+@media (max-width:992px){
     
     .filtres{
     padding-left: 0px;
     max-width: 992px;
-    min-width: 768px;
     gap: 0px;
     justify-content:space-around;
     }
 
     header{
-        max-width:972px;
-        min-width: 768px;
-        padding-left:20px
+        width:calc(100% - 40px);
     }
-
     main{
         max-width: 100%;
         display:flex;
         flex-wrap:wrap;
         justify-content:space-between;
     }
+
+    .test{
+        display:flex;
+        justify-content:flex;
+        align-items:center;
+        flex-direction:column;
+    }
+
     .txt_filtres{
         padding-inline:6px;
     }
@@ -393,12 +419,7 @@ footer{
     }
 
     .resultat{
-        min-width:912px;
         border-radius: 0px;
-    }
-
-    .contenu_footer{
-        min-width:980px;
     }
 
     .liste_footer{
@@ -411,6 +432,7 @@ footer{
 
     .grille_populaire{
         flex-direction: row;
+        max-width:921px;
     }
 
     .grille{
@@ -420,7 +442,9 @@ footer{
     }
     .populaire{
         margin-top:50px;
-        max-height: 250px;
+        width:calc(100% - 40px);
+        display:flex;
+        flex-wrap:wrap;
         order:1;
     }
 
@@ -446,6 +470,7 @@ footer{
         align-items:center;
         flex-direction:column;
     }
+
     .hebergement{
         order:2;
     }
@@ -462,29 +487,47 @@ footer{
     }
 }
 
-@media all and (max-width:767px){
-
-    body{
-        font-size:x-large;
-    }
+@media (max-width:767px){
 
     header{
+        width:100%;
         padding:0px;
-        background-color: red;
-        max-width:767px;
     }
 
     .header{
         display:block;
-        padding:0px;
     }
-/*
-    .logo{
 
-    }
-*/
     .button{
         width:50%;
+    }
+
+    .ville{
+        margin-right:-20px;
+    }
+
+    main{
+        padding: 0px;
+    }
+
+    .boutton_afficher{
+        width:50%;
+    }
+
+    .fa-magnifying-glass{
+        color:white;
+        display:block;
+        background-color:#0065FC;
+        padding:15px;
+        border-radius:20px 20px 20px 20px;
+        font-weight:700;
+        border:none;
+        font-size:90%;
+        margin-left:0px;
+    }
+
+    .rechercher{
+        display:none;
     }
 
     .hebergements, .activites{
@@ -495,36 +538,81 @@ footer{
         justify-content:center;
     }
 
+    .hebergement{
+        background:none;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        width:calc(100% - 20px);
+        padding:0px 0px 0px 20px;
+    }
+
+    .Hebergement{
+        width:calc(100% - 10px);
+        max-height:250px;
+    }
+
+    .article_activite{
+        max-height: 250px;
+    }
+
+    .grille{
+        flex-direction: column;
+    }
+
+    .grille_hebergement{
+        width:calc(100% - 40px);
+    }
+
+    .populaire{
+        margin:0px;
+    }
+
+    .Populaire{
+        height:90px;
+        flex-direction:row;
+    }
+
+    .imageg{
+        height:auto;
+        width:calc(100% - 260px);
+        border-radius:17px 0px 0px 17px;
+        flex:5;
+    }
+
+    .descriptif_populaire{
+        flex:8;
+        height:120px;
+    }
+
     .barre_recherche{
-        height: 80px;
-        display:flex;
         justify-content: center;
     }
-
-    .menu{
-        padding:20px;
-    }
-
-    .localisation, .rechercher{
-        width:100px;
-    }
     
-    .element_filtres{
-        padding-right:20px;
-        border-radius: 80px;
-    }
-
     .filtres{
         flex-wrap:wrap;
     }
 
-    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
-        width:80px;
-        height:80px;
-        border-radius:100px;
-    }
-
     .txt_filtres{
         padding-inline:10px;
+    }
+    
+    .colonne{
+        width:100%;
+        gap:40px;
+    }
+
+    .grille_activite{
+        height:1750px;
+        gap:40px;
+    }
+
+    footer{
+        height:auto;
+    }
+
+    .contenu_footer{
+        min-width:0px;
+        flex-direction:column;
+        width:100%;
     }
 }

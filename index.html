@@ -6,8 +6,8 @@
             <link rel="preconnect" href="https://fonts.googleapis.com"> 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="style.css">
             <script src="https://kit.fontawesome.com/173d48d8eb.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="style.css">
         </head>
         <body>
             <header>
@@ -31,7 +31,8 @@
                             </span>
                             <form method="post" class="formulaire" action="action.php">
                                 <input class="ville" type="text"/>
-                                <input type="submit" class="rechercher" value="Rechercher">
+                                <input type="button" class="rechercher" value="Rechercher">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </form>
                         </div>
                         <div class="filtres">
@@ -41,7 +42,7 @@
                                 <span class="txt_filtres">&Eacute;conomique</span>
                             </span>
                             <span class="element_filtres">
-                                <i class="fa-solid fa-child fa-lg"></i>
+                                <i class="fa-solid fa-child-reaching fa-lg"></i>
                                 <span class="txt_filtres">Familial</span>
                             </span>
                             <span class="element_filtres">
@@ -88,8 +89,8 @@
                            <article class="article Hebergement">
                                 <img class="image" src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="logo">
                                 <div class="descriptif">
-                                   <span class="titre_descriptif">H&ocirc;tel Les mouettes</span>
-                                    <span class="prix_descriptif">Nuit &agrave; partir de 76€</span>
+                                   <span class="titre_descriptif">Hôtel Les mouettes</span>
+                                    <span class="prix_descriptif">Nuit à partir de 76€</span>
                                     <div>
                                         <i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-empty"></i>
                                     </div>
@@ -98,8 +99,8 @@
                             <article class="article Hebergement">
                                 <img class="image" src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="logo">
                                 <div class="descriptif">
-                                    <span class="titre_descriptif">H&ocirc;tel de la mer</span>
-                                    <span class="prix_descriptif">Nuit &agrave; partir de 46 €</span>
+                                    <span class="titre_descriptif">Hôtel de la mer</span>
+                                    <span class="prix_descriptif">Nuit à partir de 46 €</span>
                                     <div>
                                         <i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-empty"></i><i class="fa-solid fa-star fa-sm star-empty"></i>
                                     </div>
@@ -109,7 +110,7 @@
                                 <img class="image" src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="logo">
                                 <div class="descriptif">
                                     <span class="titre_descriptif">Auberge Le Panier</span>
-                                    <span class="prix_descriptif">Nuit &agrave; partir de 23€</span>
+                                    <span class="prix_descriptif">Nuit à partir de 23€</span>
                                     <div>
                                         <i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-empty"></i>
                                     </div>
@@ -118,8 +119,8 @@
                             <article class="article Hebergement">
                                 <img class="image" src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="logo">
                                 <div class="descriptif">
-                                    <span class="titre_descriptif">H&ocirc;tel chez Amina</span>
-                                    <span class="prix_descriptif">Nuit &agrave; partir de 96 €</span>
+                                    <span class="titre_descriptif">Hôtel chez Amina</span>
+                                    <span class="prix_descriptif">Nuit à partir de 96 €</span>
                                     <div>
                                         <i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i><i class="fa-solid fa-star fa-sm star-full"></i>
                                     </div>
@@ -129,13 +130,16 @@
                         <div class="boutton_afficher">Afficher plus</div>
                     </section>
                     <section class="resultat populaire">
-                        <h1 class="titre">Les plus populaires</h1>
+                        <div class="titre_populaire">
+                            <h1 class="titre">Les plus populaires</h1>
+                            <i class="fa-solid fa-star fa-lg star-full star-populaire"></i>
+                        </div>
                         <div class="grille grille_populaire">
                             <article class="article Populaire">
                                     <img class="imageg" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="logo">
                                     <div class="descriptif_populaire">
                                         <p>
-                                            <span class="titre_descriptif">H&ocirc;tel Le soleil du matin</span><br/>
+                                            <span class="titre_descriptif">Hôtel Le soleil du matin</span><br/>
                                             <span class="prix_descriptif">Nuit à partir de 128 €</span>
                                         </p>
                                         <div>
@@ -147,7 +151,7 @@
                                     <img class="imageg" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="logo">
                                     <div class="descriptif_populaire">
                                         <p>
-                                            <span class="titre_descriptif">Au coeur de l'eau <br/> Chambre d'h&ocirc;tes</span><br/>
+                                            <span class="titre_descriptif">Au coeur de l'eau Chambre d'hôtes</span><br/>
                                             <span class="prix_descriptif">Nuit à partir de 71 €</span>
                                         </p>
                                         <div>
@@ -182,7 +186,7 @@
                         <div class="colonne">
                             <article class="article_activite">
                                 <img class="activite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="logo">
-                                <div class="descriptif_activite">Fort de Pom&egrave;gues</div>
+                                <div class="descriptif_activite">Fort de Pomègues</div>
                             </article>
                             <article class="article_activite">
                                 <img class="activite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="logo">
