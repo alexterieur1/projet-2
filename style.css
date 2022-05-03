@@ -34,6 +34,7 @@ header{
     width:calc(100% - 20px);
     max-width:1400px;
     padding-left:20px;
+    box-sizing:border-box;
 }
 
 .header{
@@ -72,7 +73,7 @@ li{
     border-top:solid 3px #0065FC;
 }
 
-.button{
+.boutton{
     color:black;
 }
 
@@ -94,7 +95,7 @@ a:link{
     text-decoration:none;
 }
 
-.button:hover{
+.boutton:hover{
     color:#0065FC;
 }
 
@@ -111,7 +112,7 @@ a:link{
     border:1px #F2F2F2 solid;
     background-color: #F2F2F2;
     width:45px;
-    border-radius:20px 0px 0px 20px;
+    border-radius:15px 0px 0px 15px;
 }
 
 .ville{
@@ -137,10 +138,10 @@ a:link{
     color:white;
     background-color:#0065FC;
     padding:15px;
-    border-radius:0px 20px 20px 0px;
+    border-radius:0px 15px 15px 0px;
     font-weight:700;
     border:none;
-    font-size:90%;
+    font-size:15px;
     margin-left:0px;
     font-family:'Raleway';
 }
@@ -208,6 +209,7 @@ main{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    box-sizing:border-box;
 }
 
 .resultat{
@@ -247,7 +249,7 @@ main{
 }
 
 .Activites{
-    padding:50px 0px 25px 0px;
+    padding:40px 0px 25px 0px;
 }
 
 .article{
@@ -279,7 +281,6 @@ main{
     height:calc(100% - 60px);
     border-radius:17px 17px 0px 0px;
     object-fit:cover;
-    min-width:0px;
     min-height:0px;
     width:100%;
 }
@@ -290,7 +291,6 @@ main{
     justify-content:space-between;
     height: 75px;
     padding:10px 0px 0px 10px;
-    text-align:start;
 }
 
 .titre_descriptif{
@@ -358,7 +358,6 @@ main{
     justify-content:space-between;
     padding-left:10px;
     width:150px;
-    text-align:start;
 }
 
 .grille_activite{
@@ -412,6 +411,7 @@ footer{
     width:100%;
     max-width:1400px;
     padding-left:20px;
+    box-sizing:border-box;
 }
 
 .titre_footer{
@@ -450,10 +450,6 @@ footer{
 
     .element_filtres{
         padding-right:0px;
-    }
-
-    .resultat_activite{
-        padding-inline:20px;
     }
 
     .resultat{
@@ -497,7 +493,7 @@ footer{
     .imageg{
         border-radius:17px 17px 0px 0px;
         width:100%;
-        min-height:0px; 
+        min-height:0px;
     }
 
     .test{
@@ -528,6 +524,7 @@ footer{
         width:100%;
         padding:0px;
     }
+
     .navigation{
         width:100%;
     }
@@ -541,6 +538,7 @@ footer{
     .logo{
         margin-bottom:20px;
     }
+
     .menu{
         padding-inline:20px;
     }
@@ -552,6 +550,7 @@ footer{
 
     main{
         padding: 0px;
+        width:100%;
     }
 
     .afficher{
@@ -602,7 +601,6 @@ footer{
     }
 
     .Hebergement{
-        width:calc(100% - 10px);
         max-height:215px;
     }
 
@@ -632,6 +630,7 @@ footer{
 
     .resultat_activite{
         width:100%;
+        padding:0px 20px;
     }
 
     .imageg{
@@ -646,6 +645,7 @@ footer{
     
     .filtres{
         flex-wrap:wrap;
+        gap:5px;
     }
 
     .colonne{
